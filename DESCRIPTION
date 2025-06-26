@@ -1,6 +1,6 @@
 Package: darkforest
 Title: Custom Skin for RStudio
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person("Inês", "Silva", , "i.simoes-silva@hzdr.de", role = c("aut", "cre"))
 Description: Modifies RStudio presentation and the Rtheme.

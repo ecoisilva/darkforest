@@ -1,10 +1,10 @@
-/* rs-theme-name: Dark Forest */
+/* rs-theme-name: Dark Rainforest */
 /* rs-theme-is-dark: TRUE */
 
 :root {
 
   /* Editor */
-  --editor-background-color: 30, 30, 30;
+  --editor-background-color: rgb(30, 30, 30);
   --editor-background: rgb(var(--editor-background-color));
   --editor-foreground: rgb(204, 204, 204);
 
@@ -29,18 +29,27 @@
   --inline-code: var(--string);
 }
 
-/* Color and style of the gutter: */
+/* Gutter: */
 .ace_gutter {
   background: #2B2B2B;
   color: #7E7E7E;
   font-size: 13px;
 }
+.ace_gutter-active-line {
+  background-color: #000000;
+}
 
+/* Line-width margin (if applicable): */
 .ace_print-margin {
   width: 1px;
   background: #e8e8e8;
 }
 
+.ace_cursor {
+  color: #595959;
+}
+
+/* RStudio editor windows */
 .ace_editor,
 .rstudio-themes-flat.ace_editor_theme .profvis-flamegraph,
 .rstudio-themes-flat.ace_editor_theme,
@@ -50,35 +59,31 @@
   line-height: 1.3 !important;
 }
 
-.ace_cursor {
-  color: #595959;
-}
-
+/* Highlighting of currently selected line or block of lines */
 .ace_marker-layer .ace_selection {
   background: #000000;
 }
 
+/* start of the currently selected block of lines */
 .ace_selection.ace_start {
   box-shadow: 0 0 3px 0px #2B2B2B;
   border-radius: 2px;
 }
 
+/* step markers (used in debugging) */
 .ace_marker-layer .ace_step {
-  background: rgb(198, 219, 174);
+  background: #A8B400;
 }
 
+/* bracket matching indicators: */
 .ace_marker-layer .ace_bracket {
   margin: -1px 0 0 -1px;
   border: 1px solid #525252;
 }
 
+/* active line */
 .ace_marker-layer .ace_active-line {
   background: #000000;
-}
-
-/* active line */
-.ace_gutter-active-line {
-  background-color: #000000;
 }
 
 .ace_marker-layer .ace_selected-word {
@@ -86,7 +91,7 @@
 }
 
 .ace_fold {
-  background-color: rgba(47, 164, 158, 1.00);
+  background-color: #c97b0e;
   border-color: #D1D1D1;
 }
 
@@ -94,20 +99,18 @@
   color: #525252;
 }
 
-
+/* keywords like function, if, else, stop, and operators. */
 .ace_keyword {
-  color: rgba(255, 100, 100, 1.00);
-
+  color: #e08610;
 }
 
+/* operators like (, ), =, +, and -. */
 .ace_keyword.ace_operator {
-  color: rgba(255, 100, 100, 1.00);
-
+  color: rgba(255, 160, 82, 1.00);
 }
 
 .ace_keyword.ace_other.ace_unit {
-  color: rgba(255, 160, 82, 1.00);
-
+  color: rgba(245, 238, 140, 1.00);
 }
 
 .ace_constant.ace_language {
@@ -118,7 +121,7 @@
 
 .ace_constant.ace_numeric {
   color: #F0CD08;
-  background-color: rgba(87, 83, 43, 0.00);
+  background-color: #383000;
 
 }
 
@@ -150,8 +153,8 @@
 }
 
 .ace_support.ace_class {
-  color: #2FA49E;
-  background-color: #25302F;
+  color: rgba(255, 100, 100, 1.00);
+  background-color: #3b1a1a; /*#25302F;*/
 
 }
 
@@ -183,9 +186,10 @@
 
 }
 
+/* String literals */
 .ace_string {
-  color: #4CADA2;
-  background-color: rgba(35, 48, 64, 1.00);
+  color: #abb800;
+  background-color: #283000;
 
 }
 
@@ -196,7 +200,7 @@
 }
 
 .ace_variable {
-  color: rgba(166, 201, 192, 1.00);
+  color: #abb800; /*rgba(166, 201, 192, 1.00); */
 
 }
 
@@ -207,7 +211,7 @@
 }
 
 .ace_entity.ace_other.ace_attribute-name {
-  color: rgba(130, 130, 130, 0.00);
+  color: rgba(47, 164, 158, 1.00);
 
 }
 
