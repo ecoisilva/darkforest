@@ -207,7 +207,7 @@
 }
 
 .ace_entity.ace_other.ace_attribute-name {
-  color: rgba(130, 130, 130, 0.00);
+  color: rgba(47, 164, 158, 1.00);
 
 }
 
